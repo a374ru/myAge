@@ -67,8 +67,8 @@ main {
     display: flex;
     // justify-content: center;
     flex: 1 1 auto;
-    width: 57vw;
-    // width: 55%;
+
+    width: 55%;
     // background-color: aliceblue;
     margin: auto;
     padding-bottom: 7%;
@@ -119,7 +119,7 @@ p {
     font-size: 10vw;
     }
 }
-@media (orientation: landscape) {
+@media (max-width: 690px) and (orientation: landscape) {
     main {
         width: 100%
     }
