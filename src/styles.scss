@@ -67,7 +67,7 @@ main {
     display: flex;
     // justify-content: center;
     flex: 1 1 auto;
-    width: clamp(312px, 57vw, 77%);
+    width: 57vw;
     // width: 55%;
     // background-color: aliceblue;
     margin: auto;
@@ -113,9 +113,18 @@ p {
 
 @media (max-width:525px) {
     main {
-        width: 90%
+        width: 100%
     }
     h1{
-    font-size: 12vw;
+    font-size: 10vw;
     }
 }
+@media (orientation: landscape) {
+    main {
+        width: 100%
+    }
+
+    h1 {
+        font-size: 10vh;
+    }
+} 
