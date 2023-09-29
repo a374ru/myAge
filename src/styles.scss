@@ -67,14 +67,13 @@ main {
     display: flex;
     // justify-content: center;
     flex: 1 1 auto;
-    width: clamp(312px, 55vw, 77%);
+    width: clamp(312px, 57vw, 77%);
     // width: 55%;
     // background-color: aliceblue;
     margin: auto;
     padding-bottom: 7%;
-    backdrop-filter: blur(7px);
-    padding-left: 2em;
 
+    backdrop-filter: blur(7px);
 
 }
 
@@ -115,5 +114,8 @@ p {
 @media (max-width:525px) {
     main {
         width: 90%
+    }
+    h1{
+    font-size: 12vw;
     }
 }
