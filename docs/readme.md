@@ -2,4 +2,4 @@
 
 ![img](https://img.a374.ru/svg/comp-angular.svg)
 
-[здесь…](aa/index.html)
+[Просмотр здесь…](https://a374ru.github.io/myEdge/aa/)
