@@ -1,14 +1,14 @@
 <!-- 1 -->
 <section>
     <article>
-        <h1>Сколько проведено дней на планете земля?</h1>
+        <h1>Сколько прошло дней на планете земля?</h1>
         <div id="id-1" class="one">
         <p style="padding-bottom: 7px;">Введите дату своего рождения или выберите её…</p>
             <form >
                 <input (change)="calkEdge(ff.value)" type="date" #ff>
                 <!-- <button  (click)="calkEdge(ff.value)" class="button" type="button">пуск</button> -->
             </form>
-            <p *ngIf='ff.value' id="result" class="{{classColor}}"> {{otvet}} <span style="color:rgb(255, 255, 255); font-weight: 800;">{{resultEdge}}</span>
+            <p *ngIf='ff.value' id="result" class="{{classColor}}"> {{otvet}} <span class="day">{{resultEdge}}</span>
             </p>
         </div>
     </article>

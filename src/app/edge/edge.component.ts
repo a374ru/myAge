@@ -11,8 +11,8 @@ export class EdgeComponent {
   resultEdge = "";
   otvet = ""
   messages = [
-    "Прожитых дней: ",
-    "Невозможно прожить дальше текущего дня!",
+    "Результат в днях: ",
+    "Невозможно прожить дальше текущего дня",
     "green",
     "red"
   ];
@@ -32,7 +32,7 @@ classColor =""
         this.otvet = this.messages[1]
         this.classColor = "red"
 
-        this.resultEdge = ""
+        this.resultEdge = "!"
       }
     }
   }
