@@ -1,15 +1,23 @@
 <!-- 1 -->
 <section>
     <article>
-        <h1>Сколько прошло дней на планете земля?</h1>
+        <h1>Сколько прожито дней на планете земля?</h1>
         <div id="id-1" class="one">
-        <p style="padding-bottom: 7px;">Введите дату своего рождения или выберите её…</p>
-            <form >
+            <p style="padding-bottom: 7px;">Введите дату своего рождения или выберите её…</p>
+            <form>
                 <input (change)="calkEdge(ff.value)" type="date" #ff>
                 <!-- <button  (click)="calkEdge(ff.value)" class="button" type="button">пуск</button> -->
             </form>
             <p *ngIf='ff.value' id="result" class="{{classColor}}"> {{otvet}} <span class="day">{{resultEdge}}</span>
             </p>
+            <h2>
+            Бывшие земляне под данным флагом:
+            </h2>
+
+            <ul class="residents">
+            <li *ngFor="let item of residents" class="residents-1">{{item.fnm}} {{item.lnm}}  <span class="colordays">{{item.day}}</span></li>
+            
+            </ul>
         </div>
     </article>
 </section>

@@ -1,12 +1,20 @@
 import { Component } from '@angular/core';
-import { ColdObservable } from 'rxjs/internal/testing/ColdObservable';
+import { CalcService } from '../services/calc.service';
+import { Residents } from '../interfaces/residents';
 
 @Component({
   selector: 'app-edge',
   templateUrl: './edge.component.html',
   styleUrls: ['./edge.component.scss']
 })
-export class EdgeComponent {
+export class EdgeComponent  {
+
+
+constructor(public _residentCalc: CalcService){}
+
+residents = this._residentCalc.installDay()
+
+
 
   resultEdge = "";
   otvet = ""
@@ -18,10 +26,10 @@ export class EdgeComponent {
   ];
   postComment = "штук.";
 classColor =""
-  calkEdge(rrr: string) {
-    if (rrr) {
+  calkEdge(dateEntered: string) {
+    if (dateEntered) {
       const date = new Date().getTime()
-      let dr = new Date(rrr).getTime()
+      let dr = new Date(dateEntered).getTime()
       const res = Math.trunc((date - dr) / 86400 / 1000)
       if (res > 0) {
         this.resultEdge = res.toLocaleString()
