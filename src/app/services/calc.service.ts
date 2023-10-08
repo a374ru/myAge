@@ -33,6 +33,24 @@ export class CalcService {
       dateOfBirth: "2004-04-15",
       day: 0
     },
+    {
+      fnm: "Екатерина",
+      lnm: "Яхина (Рягузова)",
+      dateOfBirth: "1995-07-01",
+      day: 0
+    },
+    {
+      fnm: "Мария",
+      lnm: "Яхина",
+      dateOfBirth: "2020-23-07",
+      day: 0
+    },
+    {
+      fnm: "Максим",
+      lnm: "Яхин",
+      dateOfBirth: "2022-02-09",
+      day: 0
+    },
   ]
 
   person = [<Residents>{}];
@@ -45,15 +63,15 @@ export class CalcService {
 
   installDay() {
 
-    for (const iterator of this.resident) {
+    for (const item of this.resident) {
 
       let theMoment = new Date().getTime()
-      let a = iterator.dateOfBirth
+      let a = item.dateOfBirth
       let b = new Date(a).getTime()
       let c = (theMoment - b) / 86400 / 1000
-      iterator.day = Math.floor(c)
+      item.day = Math.floor(c)
 
-      this.person.push(iterator)
+      this.person.push(item)
     }
 
     return this.person
