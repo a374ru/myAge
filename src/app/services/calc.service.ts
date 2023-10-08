@@ -18,7 +18,7 @@ export class CalcService {
     {
       fnm: "Олег",
       lnm: "Бородкин",
-      dateOfBirth: "1973.09.07",
+      dateOfBirth: "1973-09-07",
       day: 0
     },
     {
@@ -30,7 +30,7 @@ export class CalcService {
     {
       fnm: "Василиса",
       lnm: "Рягузова",
-      dateOfBirth: "2004/4/15",
+      dateOfBirth: "2004-4-15",
       day: 0
     },
   ]
