@@ -30,7 +30,7 @@ export class CalcService {
     {
       fnm: "Василиса",
       lnm: "Рягузова",
-      dateOfBirth: "2004-4-15",
+      dateOfBirth: "2004-04-15",
       day: 0
     },
   ]
