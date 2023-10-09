@@ -36,19 +36,19 @@ export class CalcService {
     {
       fnm: "Екатерина",
       lnm: "Яхина (Рягузова)",
-      dateOfBirth: "1995-07-01",
+      dateOfBirth: "1995-01-07",
       day: 0
     },
     {
       fnm: "Мария",
       lnm: "Яхина",
-      dateOfBirth: "2020-23-07",
+      dateOfBirth: "2020-07-23",
       day: 0
     },
     {
       fnm: "Максим",
       lnm: "Яхин",
-      dateOfBirth: "2022-02-09",
+      dateOfBirth: "2022-09-02",
       day: 0
     },
   ]
