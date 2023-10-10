@@ -22,6 +22,66 @@ export class CalcService {
       day: 0
     },
     {
+      fnm: "Клавдия",
+      lnm: "Новикова",
+      dateOfBirth: "1925-10-22",
+      day: 0
+    },
+    {
+      fnm: "Александр",
+      lnm: "Бабаев",
+      dateOfBirth: "1928-11-07",
+      day: 0
+    },
+    {
+      fnm: "Нина",
+      lnm: "Бабаева",
+      dateOfBirth: "1929-02-02",
+      day: 0
+    },
+    {
+      fnm: "Наталья",
+      lnm: "Залыженко",
+      dateOfBirth: "1950-01-11",
+      day: 0
+    },
+    {
+      fnm: "Николай",
+      lnm: "Залыженко",
+      dateOfBirth: "1953-04-22",
+      day: 0
+    },
+    {
+      fnm: "Кирилл",
+      lnm: "Залыженко",
+      dateOfBirth: "1976-09-20",
+      day: 0
+    },
+    {
+      fnm: "Михаил",
+      lnm: "Новиков",
+      dateOfBirth: "1945-06-06",
+      day: 0
+    },
+    {
+      fnm: "Александр",
+      lnm: "Новиков",
+      dateOfBirth: "1950-05-03",
+      day: 0
+    },
+    {
+      fnm: "Нина",
+      lnm: "Новикова",
+      dateOfBirth: "1952-05-16",
+      day: 0
+    },
+    {
+      fnm: "Татьяна",
+      lnm: "Новикова",
+      dateOfBirth: "1985-06-13",
+      day: 0
+    },
+    {
       fnm: "Елена",
       lnm: "Рягузова",
       dateOfBirth: "1974-09-24",
