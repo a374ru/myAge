@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CalcService } from '../services/calc.service';
-import { Residents } from '../interfaces/residents';
 
 @Component({
   selector: 'app-edge',
@@ -16,7 +15,7 @@ residents = this._residentCalc.installDay()
 
 
 
-  resultAge = "";
+  resultAge?: string|number 
   otvet = ""
   messages = [
     "Результат в днях: ",
@@ -29,18 +28,18 @@ classColor =""
   calkEdge(dateEntered: string) {
     if (dateEntered) {
       const date = new Date().getTime()
-      let dr = new Date(dateEntered).getTime()
-      const res = Math.trunc((date - dr) / 86400 / 1000)
-      if (res > 0) {
-        this.resultAge = res.toString()
+      let dr = new Date(dateEntered+'T00:00:01').getTime()
+      const result = Math.trunc((date - dr) / 86400 / 1000)
+      if (result > 0) {
+        this.resultAge = result.toString()
         this.otvet = this.messages[0]
-        this.resultAge = String(res)
+        this.resultAge = String(result)
         this.classColor = this.messages[2]
       } else {
         this.otvet = this.messages[1]
         this.classColor = "red"
 
-        this.resultAge = "!"
+        this.resultAge = ""
       }
     }
   }

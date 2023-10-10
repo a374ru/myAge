@@ -140,6 +140,11 @@ export class CalcService {
     return this.person
   }
 
+  stars(){
+  
+  
+  }
+
 
 
 }

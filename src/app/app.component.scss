@@ -1,0 +1,257 @@
+.space {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    z-index: -1;
+}
+
+/*Делаем 10 звёздочек, часть из которых будет
+мигать, а часть падать*/
+.stars1,
+.stars2,
+.stars3,
+.stars4,
+.stars5,
+.stars6,
+.stars7,
+.stars8,
+.stars9,
+.stars10 {
+    position: relative;
+    border-radius: 50%/50%;
+    background-image: -webkit-radial-gradient(white, black);
+    width: 1px;
+    /*размер звёздочек, можно увеличить*/
+    height: 1px;
+}
+
+/*Позиционируем все звёздочки на разном расстоянии
+от краёв блока и задаём им анимацию меняющую их положение
+или прозрачность*/
+.stars1 {
+    top: 8%;
+    left: 3%;
+    animation: stars1 14s 3s linear infinite;
+}
+
+.stars2 {
+    top: 3%;
+    left: 10%;
+    animation: stars2 12s linear infinite;
+}
+
+.stars3 {
+    top: 15%;
+    left: 25%;
+    animation: stars3 15s 1s linear infinite;
+}
+
+.stars4 {
+    top: 12%;
+    left: 35%;
+    animation: stars4 16s 2s linear infinite;
+}
+
+.stars5 {
+    top: 23%;
+    left: 47%;
+    animation: stars5 2.5s 1s linear infinite;
+}
+
+.stars6 {
+    top: 11%;
+    left: 60%;
+    animation: stars6 17s linear infinite;
+}
+
+.stars7 {
+    top: 20%;
+    left: 70%;
+    animation: stars7 12s 1s linear infinite;
+}
+
+.stars8 {
+    top: 12%;
+    left: 80%;
+    animation: stars8 14s linear infinite;
+}
+
+.stars9 {
+    top: 30%;
+    left: 90%;
+    animation: stars9 13s 2s linear infinite;
+}
+
+.stars10 {
+    top: 7%;
+    left: 98%;
+    animation: stars10 16s linear infinite;
+}
+
+/*Четыре звёздочки делаем мигающими, задав им переход
+от полной прозрачности к полной непрозрачности*/
+@keyframes stars2 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes stars5 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes stars7 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes stars9 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/*Остальные делаем падающими задав им перемещение
+и изменение размера*/
+
+@keyframes stars1 {
+    0% {
+        width: 1px;
+        /*Размер звёздочки в начале падения*/
+    }
+
+    7% {
+        width: 6px;
+        /*Размер в процессе падения*/
+        opacity: 1;
+        transform: translate(850px, 550px);
+    }
+
+    8% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes stars3 {
+    0% {
+        width: 3px;
+    }
+
+    12% {
+        width: 10px;
+        opacity: 1;
+        transform: translate(-700px, 600px);
+    }
+
+    13% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes stars4 {
+    0% {
+        width: 3px;
+    }
+
+    10% {
+        width: 10px;
+        opacity: 1;
+        transform: translate(200px, 300px);
+    }
+
+    11% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes stars6 {
+    0% {
+        width: 3px;
+    }
+
+    10% {
+        width: 10px;
+        opacity: 1;
+        transform: translate(-400px, 300px);
+    }
+
+    11% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes stars8 {
+    0% {
+        width: 3px;
+    }
+
+    10% {
+        width: 10px;
+        opacity: 1;
+        transform: translate(-300px, 900px);
+    }
+
+    11% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes stars10 {
+    0% {
+        width: 3px;
+    }
+
+    10% {
+        width: 10px;
+        opacity: 1;
+        transform: translate(-200px, 1800px);
+    }
+
+    11% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
