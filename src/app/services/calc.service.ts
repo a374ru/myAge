@@ -66,13 +66,14 @@ export class CalcService {
     let theMoment = new Date().getTime();
 
     for (const item of this.residents) {
-      let a = item.dateOfBirth+':00:00:00';
+      let a = item.dateOfBirth+'T00:00:01';
+      let bb = new Date(a)
       let b = new Date(a).getTime();
       let c = (theMoment - b) / 86400 / 1000;
       item.day = Math.floor(c);
 
       this.person.push(item);
-      // console.log(b, item.fnm);
+      console.log(bb, item.fnm);
       
     }
 
