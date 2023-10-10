@@ -16,7 +16,7 @@ residents = this._residentCalc.installDay()
 
 
 
-  resultEdge = "";
+  resultAge = "";
   otvet = ""
   messages = [
     "Результат в днях: ",
@@ -32,15 +32,15 @@ classColor =""
       let dr = new Date(dateEntered).getTime()
       const res = Math.trunc((date - dr) / 86400 / 1000)
       if (res > 0) {
-        this.resultEdge = res.toLocaleString()
+        this.resultAge = res.toString()
         this.otvet = this.messages[0]
-        this.resultEdge = String(res)
+        this.resultAge = String(res)
         this.classColor = this.messages[2]
       } else {
         this.otvet = this.messages[1]
         this.classColor = "red"
 
-        this.resultEdge = "!"
+        this.resultAge = "!"
       }
     }
   }

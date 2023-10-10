@@ -14,7 +14,7 @@ import { Residents } from '../interfaces/residents';
  */
 export class CalcService {
 
-  resident = [
+  residents = [
     {
       fnm: "Олег",
       lnm: "Бородкин",
@@ -63,15 +63,17 @@ export class CalcService {
 
   installDay() {
 
-    for (const item of this.resident) {
+    let theMoment = new Date().getTime();
 
-      let theMoment = new Date().getTime()
-      let a = item.dateOfBirth
-      let b = new Date(a).getTime()
-      let c = (theMoment - b) / 86400 / 1000
-      item.day = Math.floor(c)
+    for (const item of this.residents) {
+      let a = item.dateOfBirth+':00:00:00';
+      let b = new Date(a).getTime();
+      let c = (theMoment - b) / 86400 / 1000;
+      item.day = Math.floor(c);
 
-      this.person.push(item)
+      this.person.push(item);
+      // console.log(b, item.fnm);
+      
     }
 
     return this.person
