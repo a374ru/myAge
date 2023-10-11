@@ -57,7 +57,7 @@
 .stars5 {
     top: -2%;
     left: 7%;
-    animation: stars5 14s 42s ease-in-out infinite;
+    animation: stars5 14s 7s linear;
 }
 
 .stars6 {
@@ -109,7 +109,7 @@
 
     100% {
         opacity: 0;
-        transform: translate(10px, 1000px);
+        transform: translate(100px, 1000px);
     }
 }
 
