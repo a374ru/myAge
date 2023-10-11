@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
 
+
     position: fixed;
     z-index: -1;
 }
@@ -20,73 +21,73 @@
 .stars10 {
     position: relative;
     border-radius: 50%/50%;
-    background-image: -webkit-radial-gradient(white, black);
-    width: 1px;
+    background-image: -webkit-radial-gradient(rgb(255, 255, 255), rgb(166, 248, 255));
+    width: 3px;
     /*размер звёздочек, можно увеличить*/
-    height: 1px;
+    height: 3px;
 }
 
 /*Позиционируем все звёздочки на разном расстоянии
 от краёв блока и задаём им анимацию меняющую их положение
 или прозрачность*/
 .stars1 {
-    top: 8%;
-    left: 3%;
-    animation: stars1 14s 3s linear infinite;
+    top: 12%;
+    left: -10%;
+    animation: stars1 27s 44s ease-in-out infinite;
 }
 
 .stars2 {
-    top: 3%;
-    left: 10%;
-    animation: stars2 12s linear infinite;
+    top: -3%;
+    left: 0%;
+    animation: stars2 12s 2s ease-in-out infinite;
 }
 
 .stars3 {
-    top: 15%;
-    left: 25%;
-    animation: stars3 15s 1s linear infinite;
+    top: 0%;
+    left: 110%;
+    animation: stars3 14s 5s ease-in-out infinite;
 }
 
 .stars4 {
-    top: 12%;
+    top: -12%;
     left: 35%;
-    animation: stars4 16s 2s linear infinite;
+    animation: stars4 19s 7s ease-in-out infinite;
 }
 
 .stars5 {
-    top: 23%;
-    left: 47%;
-    animation: stars5 2.5s 1s linear infinite;
+    top: -2%;
+    left: 7%;
+    animation: stars5 14s 42s ease-in-out infinite;
 }
 
 .stars6 {
     top: 11%;
-    left: 60%;
-    animation: stars6 17s linear infinite;
+    left: 120%;
+    animation: stars6 7s ease-in-out infinite;
 }
 
 .stars7 {
     top: 20%;
-    left: 70%;
-    animation: stars7 12s 1s linear infinite;
+    left: 100%;
+    animation: stars7 12s 1s ease-in-out infinite;
 }
 
 .stars8 {
     top: 12%;
     left: 80%;
-    animation: stars8 14s linear infinite;
+    animation: stars8 7s ease-in-out infinite;
 }
 
 .stars9 {
     top: 30%;
     left: 90%;
-    animation: stars9 13s 2s linear infinite;
+    animation: stars9 13s 2s ease-in-out infinite;
 }
 
 .stars10 {
-    top: 7%;
+    top: -7%;
     left: 98%;
-    animation: stars10 16s linear infinite;
+    animation: stars10 16s 3.2s ease-in-out infinite;
 }
 
 /*Четыре звёздочки делаем мигающими, задав им переход
@@ -108,6 +109,7 @@
 
     100% {
         opacity: 0;
+        transform: translate(10px, 1000px);
     }
 }
 
@@ -137,22 +139,14 @@
 @keyframes stars1 {
     0% {
         width: 1px;
+        opacity: .7;
         /*Размер звёздочки в начале падения*/
     }
 
-    7% {
-        width: 6px;
-        /*Размер в процессе падения*/
-        opacity: 1;
-        transform: translate(850px, 550px);
-    }
-
-    8% {
-        opacity: 0;
-    }
 
     100% {
-        opacity: 0;
+        opacity: 1;
+        transform: scale(22) translate(4000px, 150px);
     }
 }
 
@@ -164,7 +158,7 @@
     12% {
         width: 10px;
         opacity: 1;
-        transform: translate(-700px, 600px);
+        transform: translate(-700px, 1000px);
     }
 
     13% {
