@@ -9,7 +9,11 @@
 
 /*Делаем 10 звёздочек, часть из которых будет
 мигать, а часть падать*/
-.stars1,
+.stars1{
+        position: relative;
+        border-radius: 50% 50%;
+        background-image: linear-gradient(to right top, #000000, #000000, #000000, #000000, #000000, #050505, #0a0a0a, #0f0f0f, #171717, #1d1d1d, #232323, #2a2a2a);
+    }
 .stars2,
 .stars3,
 .stars4,
@@ -21,7 +25,7 @@
 .stars10 {
     position: relative;
     border-radius: 50%/50%;
-    background-image: -webkit-radial-gradient(rgb(255, 255, 255), rgb(166, 248, 255));
+    background-color: #fff;
     width: 3px;
     /*размер звёздочек, можно увеличить*/
     height: 3px;
@@ -31,21 +35,21 @@
 от краёв блока и задаём им анимацию меняющую их положение
 или прозрачность*/
 .stars1 {
-    top: 12%;
-    left: -10%;
-    animation: stars1 27s 44s ease-in-out infinite;
+    top: 0%;
+    left: 0%;
+    animation: stars1 60s 1s cubic-bezier(0.42, 0, 0.54, 0.04) infinite;
 }
 
 .stars2 {
     top: -3%;
     left: 0%;
-    animation: stars2 12s 2s ease-in-out infinite;
+    animation: stars2 12s 2s linear infinite;
 }
 
 .stars3 {
     top: 0%;
     left: 110%;
-    animation: stars3 14s 5s ease-in-out infinite;
+    animation: stars3 14s 5s linear alternate infinite;
 }
 
 .stars4 {
@@ -57,13 +61,13 @@
 .stars5 {
     top: -2%;
     left: 7%;
-    animation: stars5 14s 7s linear;
+    animation: stars5 17s 2s linear;
 }
 
 .stars6 {
     top: 11%;
     left: 120%;
-    animation: stars6 7s ease-in-out infinite;
+    animation: stars6 7s ease-in-out alternate infinite;
 }
 
 .stars7 {
@@ -138,15 +142,16 @@
 
 @keyframes stars1 {
     0% {
-        width: 1px;
-        opacity: .7;
+        width: 10px;
+        height: 10px;
+        opacity: 1;
         /*Размер звёздочки в начале падения*/
     }
 
 
     100% {
-        opacity: 1;
-        transform: scale(22) translate(4000px, 150px);
+
+        transform: scale(333) translate(700px, 700px);
     }
 }
 
