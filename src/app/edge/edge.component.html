@@ -2,7 +2,7 @@
 
 <section>
     <article>
-        <h1>Сколько прожито дней на планете земля?</h1>
+        <h1>Сколько прошло дней от выбранной даты?</h1>
         <div id="id-1" class="one">
             <p style="padding-bottom: 7px;">Введите дату своего рождения или выберите её…</p>
             <form>
@@ -11,13 +11,14 @@
             </form>
             <p *ngIf='ff.value' id="result" class="{{classColor}}"> {{otvet}} <span *ngIf="resultAge" class="day">{{resultAge}}</span>
             </p>
-            <h2>
-            Количество дней некоторых резидентов.
-            </h2>
-
+            <details>
+            <summary>
+            Количество дней некоторых резидентов планеты Земля.
+            </summary>
             <ul class="residents">
             <li *ngFor="let item of residents" class="residents-1">{{item.fnm}} {{item.lnm}}  <span  class="colordays">{{item.day}}</span></li>
             </ul>
+            </details>
         </div>
     </article>
     
