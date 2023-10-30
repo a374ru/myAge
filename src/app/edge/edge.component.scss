@@ -6,11 +6,17 @@ h3 {
 
 details{
 margin-top: 5%;
-color: aliceblue;
+color: #7aa800;
+font-size: 1.5rem;
 }
 
-details:hover{
+summary:hover{
 color: #ffd6e9;
+cursor:pointer;
+}
+
+summary{
+cursor: auto;
 }
 
 section {
