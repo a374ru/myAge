@@ -1,39 +1,72 @@
-
-h1{
-color: rgb(215, 214, 214);
+h1,
+h2,
+h3 {
+    color: rgb(215, 214, 214);
 }
 
-section{
-margin-left: 4vw;
-margin-right: 3vw;
+details{
+margin-top: 5%;
+color: #7aa800;
+font-size: 1.5rem;
+}
 
+summary:hover{
+color: #ffd6e9;
+cursor:pointer;
+}
+
+summary{
+cursor: auto;
+}
+
+section {
+    margin-left: 4vw;
+    margin-right: 3vw;
+
+}
+
+.colordays {
+    color: #65bcffc7;
+}
+
+.residents {
+    list-style-type: none;
+    color: #8aff7dc7;
 }
 
 p {
     color: rgb(155, 192, 255);
 }
-.green{
 
-margin: .5em 0em;
-font-size: 2.3rem;
-color: #f6ffcf;
+.green {
+
+    margin: .5em 0em;
+    font-size: 2.3rem;
+    color: #f6ffcf;
 
 }
-.day{
-color: rgb(255, 255, 255);
+
+.day {
+    color: rgb(255, 255, 255);
     font-weight: 800;
     padding: .4em;
-        background-color: #2eae17bc;
-        border-radius: 33%;
-        line-height: 2.2;
-}
-.red{
-padding: 1em;
-background-color: rgba(214, 0, 0, 0.726);
-border-radius: 12px;
-margin: .5em 0em;
-font-size: 2.3rem;
-color: #ffd6e9;
+    background-color: #2eae17bc;
+    border-radius: 33%;
+    line-height: 2.2;
 }
 
-.one{width: fit-content;}
+.red {
+    padding: 1em;
+    background-color: rgba(214, 0, 0, 0.726);
+    border-radius: 12px;
+    margin: .5em 0em;
+    font-size: 2.3rem;
+    color: #ffd6e9;
+}
+
+.one {
+    width: fit-content;
+}
+
+
+// =-=-=-=-=-=-==-=-=-=-==-
