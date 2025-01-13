@@ -18,7 +18,7 @@ residents = this._residentCalc.installDay()
   resultAge?: string|number 
   otvet = ""
   messages = [
-    "Дней: ",
+    "Результат в днях: ",
     "Невозможно прожить дальше текущего дня",
     "green",
     "red"
