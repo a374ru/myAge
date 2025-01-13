@@ -8,7 +8,7 @@ import { EdgeComponent } from './edge/edge.component';
 @NgModule({
   declarations: [
     AppComponent,
-    EdgeComponent
+    EdgeComponent,
   ],
   imports: [
     BrowserModule,
